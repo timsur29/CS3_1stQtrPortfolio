@@ -2,6 +2,7 @@
 ## 28/07/2025
 
 Link to the replay provided [here.](https://www.youtube.com/watch?v=AzoVnp66KqQ)
+
 ![*SONA 2025 thumbnail*](https://i.ytimg.com/an_webp/AzoVnp66KqQ/mqdefault_6s.webp?du=3000&sqp=CIyJncQG&rs=AOn4CLD9-jJeCRSvnwhPAruYstCxoWuqTQ)
 
 
