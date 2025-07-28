@@ -16,6 +16,7 @@ Link to the replay provided [here.](https://www.youtube.com/watch?v=AzoVnp66KqQ)
 3. **Reflection**
     
     Listening to the 2025 SONA, I have learned a little more about the strengths and weaknesses of this country: the strengths of its initiative and resolve, but its weakness in its current state and the actions it has taken. The promises of reform made this day echo those made by this administration and those that came before, yet many of them have yet to be fulfilled. For instance, corruption continues to be a known issue, as evidenced by the low quality of infrastructure and the lack of apparently good change in its sorry state, which can be seen in the cut corners of roads (even major ones) and the thinly-spread resources of many public facilities like schools and hospitals. I admire the efforts taken to make improvements for our nation, but I fear for the possibility they may fall flat in practice.
+    
     When I reflect on the Philippines, I see a ground of near-infinite possibility in the strength of its people and its great wealth of resources. The steps proposed today show promise, that they might reclaim the momentum lost to wrong turns made in the past and reforms made too late, and I sincerely wish that the hope the people have for this day's proposals will not turn out to have been misplaced. Today, seeds are planted. May this administration and those that come after cultivate them for the harvest of tomorrow.
 
 4. **One-sentence Message**
