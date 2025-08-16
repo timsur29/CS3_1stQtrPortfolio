@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <link rel="stylesheet" href="styleindex.css">
+   <h2> "augmented" guessing game submitted by Tim Surla of Strontium</h2>
+   <h3> ready for a real challenge?</h3>
+   <p>Guess the number: ****<br>
+    The number is from 1 to 10^6.<br>
+    <label for="guess">Enter your guess: </label>
+    <input id="guess" type="number"><br>
+    <button onclick="checkIt()">Check It</button>
+   </p>
+
+   <div id="result"></div><br><br>
+
+   <button><a href="../index.html">Home</a></button>
+
+    <script>
+
+       var dNumber = Math.floor(Math.random() * 1000000) + 1; // generates a number from 1  to 100 when the page loads
+
+        function reset() {
+            location.reload();
+        }
+
+        function checkIt() {
+            guess = parseFloat(document.getElementById("guess").value);
+            if (guess==dNumber) {
+                result.innerHTML = "Congrats! You got it!";
+                result.innerHTML += "<br><br>";
+                result.innerHTML += '<button onclick="reset()">Reset</button>';
+            }
+            else if (guess>=dNumber) {
+                result.innerHTML = "The number's a little too high...";
+            }
+            else if (guess<=dNumber) {
+                result.innerHTML = "A little higher...";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
