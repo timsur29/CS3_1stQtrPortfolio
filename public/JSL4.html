@@ -9,6 +9,7 @@
 <input type="text" id="guessInput2" maxlength="1">
 <button onclick="makeGuess2()">Guess</button>
 <p id="message2"></p>
+<p id="strikecounter"></p>
 
 <script>
   let secretWord = ["t", "e", "n", "a", "c", "i", "o", "u", "s"];
@@ -19,6 +20,7 @@
 
   document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
   document.getElementById("wordDisplay2").textContent = guessedWord2.join(" ");
+  document.getElementById("strikecounter").textContent = "Strikes: " + String(strikes);
 
   function makeGuess() {
     if (strikes <= 0) {
@@ -64,5 +66,6 @@
     document.getElementById("wordDisplay2").textContent = guessedWord2.join(" ");
     document.getElementById("message2").textContent = correct ? "✅ Correct!" : "❌ Try again.";
     document.getElementById("guessInput2").value = "";
+
   }
 </script>
