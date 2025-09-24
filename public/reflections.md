@@ -35,4 +35,4 @@
 * I believe all of the activities helped me to some capacity, even if I did not find all of them enjoyable. They each taught me something, like JS use with HTML, formatting, algorithm-designing, and more. I think all learning experiences are important in life, especially those that force one to leave the comfort zone and expand their horizons.
 
 
-* THANK YOU !!!!!!!!
+# THANK YOU !!!!!!!!
