@@ -47,6 +47,13 @@ div {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     color: navy;
 }
+#enclosure1 {
+    display: inline-block;
+    border: 4px solid midnightblue;
+    margin: 0 auto;
+    background-color: #d1e5f4;
+    border-radius: 5%;
+}
 label {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     color: navy;
@@ -71,4 +78,13 @@ table, td, th {
     color: navy;
     font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';    
     border-radius: 5%;
+}
+
+img {
+    margin-inline: 20px;
+    margin-block: 20px;
+}
+
+iframe {
+    border-radius: 20px;
 }
