@@ -1,0 +1,57 @@
+<h1>Q3 2nd/3rd Graded Activity - Designing an HTML form / Using localStorage</h1>
+<h2>Club Applications 2026</h2><br>
+<form method="post" action="submit" id="clubform">
+    <label for="stid">Student ID: </label>
+    <input type="number" id="stid" required><br><br>
+    <label for="name">Full Name: </label>
+    <input type="text" id="name" required><br><br>
+    <label for="bday">Date of Birth: </label>
+    <input type="date" id="bday" required><br><br>
+    <label for="mail">Email Address: </label>
+    <input type="email" id="mail" required><br><br>
+    <label for="pnum">Mobile Phone Number: </label>
+    <input type="text" id="pnum" required><br><br>
+    <label for="level">Grade Level: </label>
+    <select name="Grade Level" id="level" required>
+        <option disabled selected hidden>Select your grade level</option>
+        <option value=7>Grade 7</option>
+        <option value=8>Grade 8</option>
+        <option value=9>Grade 9</option>
+        <option value=10>Grade 10</option>
+        <option value=11>Grade 11</option>
+        <option value=12>Grade 12</option>
+    </select><br><br>
+    <label for="iestat">Intern/Extern Status: <label><br>
+    <label for="intern">&nbsp&nbsp&nbsp&nbsp&nbsp Intern</label>
+    <input type="radio" id="intern" value="intern" name="iestat" required><br>
+    <label for="extern">&nbsp&nbsp&nbsp&nbsp Extern</label>
+    <input type="radio" id="extern" value="extern" name="iestat"><br><br>
+    <label for="club">Preferred Organization: </label>
+    <select name="club" id="club" required>
+        <option disabled selected hidden>Choose a club</option>
+        <option value=7>Alianti</option>
+        <option value=8>Alyabo</option>
+        <option value=9>Exposure</option>
+        <option value=10>PisayXYZ</option>
+        <option value=11>SARS+</option>
+        <option value=12>Sightlines</option>
+    </select><br><br>
+    <input type="button" value="Reset" onclick="location.reload()"><br><br>
+    <input type="submit" value="Submit" onsubmit="conf()"><br><br>
+</form>
+
+<script>
+    document.getElementById("clubform").addEventListener("submit",
+    function conf(event) {
+        if (confirm("Are you sure you want to submit your application?")) {
+            location.reload();
+        }
+        else {
+            conf.preventDefault();
+        }
+    });
+
+
+</script>
+
+<a>View Club Signups</a>
