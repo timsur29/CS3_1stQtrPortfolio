@@ -1,0 +1,71 @@
+<h1>Guess My Word</h1>
+<p id="wordDisplay"></p>
+<input type="text" id="guessInput" maxlength="1">
+<button onclick="makeGuess()">Guess</button>
+<p id="message"></p>
+
+<h1>Guess My Name</h1>
+<p id="wordDisplay2"></p>
+<input type="text" id="guessInput2" maxlength="1">
+<button onclick="makeGuess2()">Guess</button>
+<p id="message2"></p>
+<p id="strikecounter"></p>
+
+<script>
+  let secretWord = ["t", "e", "n", "a", "c", "i", "o", "u", "s"];
+  let guessedWord = ["_", "_", "_", "_", "_", "_", "_", "_", "_"];
+  let secretWord2 = ["t", "i", "m"];
+  let guessedWord2 = ["_", "_", "_"];
+  let strikes = 5;
+
+  document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
+  document.getElementById("wordDisplay2").textContent = guessedWord2.join(" ");
+  document.getElementById("strikecounter").textContent = "Strikes: " + String(strikes);
+
+  function makeGuess() {
+    if (strikes <= 0) {
+        return;
+    }
+
+    let guess = document.getElementById("guessInput").value.toLowerCase();
+    let correct = false;
+
+    for (let i = 0; i < secretWord.length; i++) {
+      if (secretWord[i] === guess) {
+        guessedWord[i] = guess;
+        correct = true;
+      }
+    }
+    if (correct != true) {
+        strikes -= 1;
+    }
+
+    document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
+    document.getElementById("message").textContent = correct ? "✅ Correct!" : "❌ Try again.";
+    document.getElementById("guessInput").value = "";
+  }
+
+  function makeGuess2() {
+    if (strikes <= 0) {
+        return;
+    }
+    
+    let guess = document.getElementById("guessInput2").value.toLowerCase();
+    let correct = false;
+
+    for (let i = 0; i < secretWord2.length; i++) {
+      if (secretWord2[i] === guess) {
+        guessedWord2[i] = guess;
+        correct = true;
+      }
+    }
+    if (correct != true) {
+        strikes -= 1;
+    }
+
+    document.getElementById("wordDisplay2").textContent = guessedWord2.join(" ");
+    document.getElementById("message2").textContent = correct ? "✅ Correct!" : "❌ Try again.";
+    document.getElementById("guessInput2").value = "";
+
+  }
+</script>
